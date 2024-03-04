@@ -3,6 +3,7 @@ import { RouteObject, createBrowserRouter } from "react-router-dom";
 import Main from "./pages/Main";
 import Tabs from "./pages/Tabs";
 import Accordion from "./pages/Accordion";
+import FlightBooker from "./pages/FlightBooker";
 
 interface Route {
   title?: string;
@@ -14,12 +15,6 @@ interface Routes {
 }
 
 export const routes: Routes = {
-  main: {
-    config: {
-      path: "/",
-      element: <Main />,
-    },
-  },
   tabs: {
     config: {
       path: "/tabs",
@@ -34,10 +29,24 @@ export const routes: Routes = {
     },
     title: "Accordion",
   },
+  flighBooker: {
+    config: {
+      path: "/flight-booker",
+      element: <FlightBooker />,
+    },
+    title: "Flight Booker",
+  },
 };
 
 const router = createBrowserRouter(
-  Object.entries(routes).map(([, route]) => route.config)
+  Object.entries(routes)
+    .map(([, route]) => route.config)
+    .concat([
+      {
+        path: "/",
+        element: <Main />,
+      },
+    ])
 );
 
 export default router;

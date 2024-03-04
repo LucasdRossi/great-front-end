@@ -3,8 +3,6 @@ import { withHeader } from "../../components/Header";
 import Tabs from "./components/Tabs";
 import type { Props as TabProps } from "./components/Tabs/Tabs";
 
-import "./tabs-page.css";
-
 function TabsPage() {
   const tabItems: TabProps["tabs"] = useMemo(
     () => [
