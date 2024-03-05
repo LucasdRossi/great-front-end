@@ -8,7 +8,6 @@ function ProgressBarPage() {
 
   return (
     <main>
-      <h1>Progress Bar</h1>
       <input
         value={progress}
         onChange={(e) => setProgress(Number(e.target.value))}

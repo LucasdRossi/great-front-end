@@ -4,7 +4,6 @@ import FlightBooker from "./components/FlightBooker";
 function FlightBookerPage() {
   return (
     <main>
-      <h1>Flight Booker</h1>
       <FlightBooker />
     </main>
   );

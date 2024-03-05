@@ -4,7 +4,6 @@ import GenerateTable from "./components/GenerateTable";
 function GenerateTablePage() {
   return (
     <main>
-      <h1>Generate Table</h1>
       <GenerateTable />
     </main>
   );

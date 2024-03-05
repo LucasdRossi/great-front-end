@@ -28,7 +28,6 @@ function AccordionPage() {
 
   return (
     <main>
-      <h1>Accordion</h1>
       <div className="accordion-page__accordion-container">
         <Accordion items={accordionItems} />
       </div>

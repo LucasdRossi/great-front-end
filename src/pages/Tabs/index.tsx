@@ -39,7 +39,6 @@ function TabsPage() {
 
   return (
     <main>
-      <h1>Tabs</h1>
       <Tabs tabs={tabItems} />
     </main>
   );
