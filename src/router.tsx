@@ -5,6 +5,7 @@ import Tabs from "./pages/Tabs";
 import Accordion from "./pages/Accordion";
 import FlightBooker from "./pages/FlightBooker";
 import GenerateTable from "./pages/GenerateTable";
+import ProgressBar from "./pages/ProgressBar";
 
 interface Route {
   title?: string;
@@ -43,6 +44,13 @@ export const routes: Routes = {
       element: <GenerateTable />,
     },
     title: "Generate Table",
+  },
+  progressBar: {
+    config: {
+      path: "/progress-bar",
+      element: <ProgressBar />,
+    },
+    title: "Progress Bar",
   },
 };
 

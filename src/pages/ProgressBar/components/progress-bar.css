@@ -1,0 +1,31 @@
+.progress-bar {
+  --border-radius: 6px;
+
+  height: 20px;
+  background-color: #c5c5c5;
+  border-radius: var(--border-radius);
+  position: relative;
+}
+
+.progress-bar__filled-bar {
+  background-color: hsl(216, 98%, 52%);
+  text-align: center;
+  height: 20px;
+  position: absolute;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.progress-bar__filled-bar_full {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
