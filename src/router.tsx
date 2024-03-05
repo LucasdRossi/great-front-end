@@ -4,6 +4,7 @@ import Main from "./pages/Main";
 import Tabs from "./pages/Tabs";
 import Accordion from "./pages/Accordion";
 import FlightBooker from "./pages/FlightBooker";
+import GenerateTable from "./pages/GenerateTable";
 
 interface Route {
   title?: string;
@@ -35,6 +36,13 @@ export const routes: Routes = {
       element: <FlightBooker />,
     },
     title: "Flight Booker",
+  },
+  generateTable: {
+    config: {
+      path: "/generate-table",
+      element: <GenerateTable />,
+    },
+    title: "Generate Table",
   },
 };
 

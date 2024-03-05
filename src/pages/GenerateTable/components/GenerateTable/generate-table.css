@@ -1,0 +1,32 @@
+.generate-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  gap: 1rem;
+}
+
+.generate-table__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.generate-table__input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.generate-table__table tbody td {
+  min-width: 1rem;
+  padding: 8px;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
