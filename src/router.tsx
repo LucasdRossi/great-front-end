@@ -6,6 +6,7 @@ import Accordion from "./pages/Accordion";
 import FlightBooker from "./pages/FlightBooker";
 import GenerateTable from "./pages/GenerateTable";
 import ProgressBar from "./pages/ProgressBar";
+import TemperatureConverter from "./pages/TemperatureConverter";
 
 interface Route {
   title?: string;
@@ -51,6 +52,13 @@ export const routes: Routes = {
       element: <ProgressBar />,
     },
     title: "Progress Bar",
+  },
+  temperatureConverter: {
+    config: {
+      path: "/temperature-converter",
+      element: <TemperatureConverter />,
+    },
+    title: "Temperature Converter",
   },
 };
 

@@ -1,0 +1,18 @@
+.temperature-converter {
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.temperature-converter__separetor {
+  font-size: 1.6rem;
+}
+
+.temperature-converter__input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
