@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import "./flight-booker.css";
 
 type FlightTypes = keyof typeof flightTypes;
@@ -17,7 +17,7 @@ const formatDate = (d: Date) => {
   return `${year}-${month}-${day}`;
 };
 
-export default function FlightBooker() {
+export default memo(function FlightBooker() {
   const [flightType, setFlightType] = useState<FlightTypes>();
   const [departureDate, setDepartureDate] = useState(formatDate(now));
   const [returnDate, setReturnDate] = useState<string>();
@@ -90,4 +90,4 @@ export default function FlightBooker() {
       </button>
     </form>
   );
-}
+});

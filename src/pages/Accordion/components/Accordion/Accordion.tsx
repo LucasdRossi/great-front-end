@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import "./accordion.css";
 
 export interface AccordionItem {
@@ -11,7 +11,7 @@ export interface Props {
   items: AccordionItem[];
 }
 
-export default function Accordion(props: Props) {
+export default memo(function Accordion(props: Props) {
   const { items } = props;
 
   const [openedItems, setOpenedItems] = useState(
@@ -62,4 +62,4 @@ export default function Accordion(props: Props) {
       })}
     </div>
   );
-}
+});

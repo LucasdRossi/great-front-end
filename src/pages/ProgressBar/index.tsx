@@ -16,7 +16,7 @@ function ProgressBarPage() {
         max={100}
         type="range"
       />
-      <div style={{ marginTop: 10 }}>
+      <div style={{ marginTop: 10, maxWidth: 500 }}>
         <ProgressBar progress={progress} />
       </div>
     </main>

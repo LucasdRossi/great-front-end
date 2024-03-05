@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import "./generate-table.css";
 
-export default function GenerateTable() {
+export default memo(function GenerateTable() {
   const [rows, setRows] = useState<number>();
   const [columns, setColumns] = useState<number>();
 
@@ -53,4 +53,4 @@ export default function GenerateTable() {
       )}
     </div>
   );
-}
+});

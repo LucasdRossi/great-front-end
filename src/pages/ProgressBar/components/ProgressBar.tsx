@@ -1,3 +1,4 @@
+import { memo } from "react";
 import "./progress-bar.css";
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
 const MIN = 0;
 const MAX = 100;
 
-export default function ProgressBar(props: Props) {
+export default memo(function ProgressBar(props: Props) {
   const { progress } = props;
 
   if (progress < MIN || progress > MAX) return;
@@ -32,4 +33,4 @@ export default function ProgressBar(props: Props) {
       </span>
     </div>
   );
-}
+});

@@ -1,4 +1,4 @@
-import { HTMLProps, useState } from "react";
+import { HTMLProps, memo, useState } from "react";
 import "./tabs.css";
 
 export interface Tab {
@@ -12,7 +12,7 @@ export interface Props {
   defaultTab?: number;
 }
 
-export default function Tabs(props: Props) {
+export default memo(function Tabs(props: Props) {
   const { tabs, defaultTab } = props;
   const [activeTab, setActiveTab] = useState(defaultTab ?? 0);
 
@@ -40,4 +40,4 @@ export default function Tabs(props: Props) {
       </div>
     </div>
   );
-}
+});
