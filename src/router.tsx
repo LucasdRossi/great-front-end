@@ -7,6 +7,7 @@ import FlightBooker from "./pages/FlightBooker";
 import GenerateTable from "./pages/GenerateTable";
 import ProgressBar from "./pages/ProgressBar";
 import TemperatureConverter from "./pages/TemperatureConverter";
+import Tweet from "./pages/Tweet";
 
 interface Route {
   title?: string;
@@ -59,6 +60,13 @@ export const routes: Routes = {
       element: <TemperatureConverter />,
     },
     title: "Temperature Converter",
+  },
+  tweet: {
+    config: {
+      path: "/tweet",
+      element: <Tweet />,
+    },
+    title: "Tweet",
   },
 };
 
