@@ -9,6 +9,7 @@ import ProgressBar from "./pages/ProgressBar";
 import TemperatureConverter from "./pages/TemperatureConverter";
 import Tweet from "./pages/Tweet";
 import LikeButton from "./pages/LikeButton";
+import TrafficLight from "./pages/TrafficLight";
 
 interface Route {
   title?: string;
@@ -75,6 +76,13 @@ export const routes: Routes = {
       element: <LikeButton />,
     },
     title: "Like Button",
+  },
+  trafficLight: {
+    config: {
+      path: "/traffic-light",
+      element: <TrafficLight />,
+    },
+    title: "Traffic Light",
   },
 };
 
