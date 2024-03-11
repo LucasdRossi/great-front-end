@@ -1,0 +1,37 @@
+.like-button {
+  --red: #f00;
+  --gray: #888;
+
+  color: var(--gray);
+  border-color: var(--gray);
+  border-radius: 10px;
+  border-width: 2px;
+  font-weight: 600;
+  background-color: white;
+  padding: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.like-button:hover {
+  color: var(--red);
+  border-color: var(--red);
+  background-color: white;
+}
+
+.like-button_liked {
+  background-color: var(--red);
+  border-color: var(--red);
+  border-radius: var(--red);
+  border-radius: 10px;
+  border-width: 2px;
+
+  color: white;
+}

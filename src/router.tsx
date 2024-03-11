@@ -8,6 +8,7 @@ import GenerateTable from "./pages/GenerateTable";
 import ProgressBar from "./pages/ProgressBar";
 import TemperatureConverter from "./pages/TemperatureConverter";
 import Tweet from "./pages/Tweet";
+import LikeButton from "./pages/LikeButton";
 
 interface Route {
   title?: string;
@@ -67,6 +68,13 @@ export const routes: Routes = {
       element: <Tweet />,
     },
     title: "Tweet",
+  },
+  likeButton: {
+    config: {
+      path: "/like-button",
+      element: <LikeButton />,
+    },
+    title: "Like Button",
   },
 };
 
