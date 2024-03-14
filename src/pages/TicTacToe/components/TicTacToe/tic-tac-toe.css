@@ -1,0 +1,13 @@
+.tic-tac-toe__body {
+}
+
+.tic-tac-toe__cell {
+  --size: 50px;
+
+  width: var(--size);
+  height: var(--size);
+
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+}

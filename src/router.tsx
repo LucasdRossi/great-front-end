@@ -10,6 +10,7 @@ import TemperatureConverter from "./pages/TemperatureConverter";
 import Tweet from "./pages/Tweet";
 import LikeButton from "./pages/LikeButton";
 import TrafficLight from "./pages/TrafficLight";
+import TicTacToe from "./pages/TicTacToe";
 
 interface Route {
   title?: string;
@@ -83,6 +84,13 @@ export const routes: Routes = {
       element: <TrafficLight />,
     },
     title: "Traffic Light",
+  },
+  ticTacToe: {
+    config: {
+      path: "/tic-tac-toe",
+      element: <TicTacToe />,
+    },
+    title: "Tic Tac Toe",
   },
 };
 
