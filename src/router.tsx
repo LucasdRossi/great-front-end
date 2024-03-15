@@ -11,6 +11,7 @@ import Tweet from "./pages/Tweet";
 import LikeButton from "./pages/LikeButton";
 import TrafficLight from "./pages/TrafficLight";
 import TicTacToe from "./pages/TicTacToe";
+import JobBoard from "./pages/JobBoard";
 
 interface Route {
   title?: string;
@@ -91,6 +92,13 @@ export const routes: Routes = {
       element: <TicTacToe />,
     },
     title: "Tic Tac Toe",
+  },
+  jobBoard: {
+    config: {
+      path: "/job-board",
+      element: <JobBoard />,
+    },
+    title: "Job Board",
   },
 };
 
