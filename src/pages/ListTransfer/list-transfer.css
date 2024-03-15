@@ -1,0 +1,23 @@
+.transfer {
+  display: flex;
+  align-content: flex-start;
+}
+
+.transfer__list-item {
+  display: flex;
+  gap: 10px;
+}
+
+.transfer__list {
+  width: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.transfer__control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+}

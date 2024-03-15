@@ -12,6 +12,7 @@ import LikeButton from "./pages/LikeButton";
 import TrafficLight from "./pages/TrafficLight";
 import TicTacToe from "./pages/TicTacToe";
 import JobBoard from "./pages/JobBoard";
+import ListTransfer from "./pages/ListTransfer";
 
 interface Route {
   title?: string;
@@ -99,6 +100,13 @@ export const routes: Routes = {
       element: <JobBoard />,
     },
     title: "Job Board",
+  },
+  listTransfer: {
+    config: {
+      path: "/list-transfer",
+      element: <ListTransfer />,
+    },
+    title: "List Transfer",
   },
 };
 
