@@ -13,6 +13,7 @@ import TrafficLight from "./pages/TrafficLight";
 import TicTacToe from "./pages/TicTacToe";
 import JobBoard from "./pages/JobBoard";
 import ListTransfer from "./pages/ListTransfer";
+import ToDo from "./pages/ToDo";
 
 interface Route {
   title?: string;
@@ -107,6 +108,13 @@ export const routes: Routes = {
       element: <ListTransfer />,
     },
     title: "List Transfer",
+  },
+  toDo: {
+    config: {
+      path: "/to-do",
+      element: <ToDo />,
+    },
+    title: "ToDo",
   },
 };
 
