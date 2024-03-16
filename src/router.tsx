@@ -14,6 +14,7 @@ import TicTacToe from "./pages/TicTacToe";
 import JobBoard from "./pages/JobBoard";
 import ListTransfer from "./pages/ListTransfer";
 import ToDo from "./pages/ToDo";
+import StarRating from "./pages/StarRating";
 
 interface Route {
   title?: string;
@@ -115,6 +116,13 @@ export const routes: Routes = {
       element: <ToDo />,
     },
     title: "ToDo",
+  },
+  starRating: {
+    config: {
+      path: "/star-rating",
+      element: <StarRating />,
+    },
+    title: "Star Rating",
   },
 };
 
