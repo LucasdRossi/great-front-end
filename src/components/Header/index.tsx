@@ -22,7 +22,7 @@ export default function Header(props: Props) {
 }
 
 export function withHeader<P extends JSX.IntrinsicAttributes>(
-  Component: () => React.ReactNode
+  Component: () => React.ReactElement
 ) {
   return (props: P) => (
     <Header>
