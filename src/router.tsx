@@ -15,6 +15,7 @@ import JobBoard from "./pages/JobBoard";
 import ListTransfer from "./pages/ListTransfer";
 import ToDo from "./pages/ToDo";
 import StarRating from "./pages/StarRating";
+import Autocomplete from "./pages/Autocomplete";
 
 interface Route {
   title?: string;
@@ -123,6 +124,13 @@ export const routes: Routes = {
       element: <StarRating />,
     },
     title: "Star Rating",
+  },
+  autocomplete: {
+    config: {
+      path: "/autocomplete",
+      element: <Autocomplete />,
+    },
+    title: "Autocomplete",
   },
 };
 
