@@ -16,6 +16,7 @@ import ListTransfer from "./pages/ListTransfer";
 import ToDo from "./pages/ToDo";
 import StarRating from "./pages/StarRating";
 import Autocomplete from "./pages/Autocomplete";
+import WhackAMolePage from "./pages/WhackAMole";
 
 interface Route {
   title?: string;
@@ -131,6 +132,13 @@ export const routes: Routes = {
       element: <Autocomplete />,
     },
     title: "Autocomplete",
+  },
+  whackAMole: {
+    config: {
+      path: "/whack-a-mole",
+      element: <WhackAMolePage />,
+    },
+    title: "Whack-A-Mole",
   },
 };
 

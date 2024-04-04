@@ -1,0 +1,29 @@
+.hole {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+}
+
+.mole {
+  position: absolute;
+  z-index: 10;
+  height: 200px;
+  width: 200px;
+  top: 0;
+  background-image: url("https://www.greatfrontend.com/img/questions/whack-a-mole/mole-head.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hole-pit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 100px;
+  row-gap: 100px;
+}
+
+.hole-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
